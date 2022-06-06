@@ -1,13 +1,18 @@
 const hamburgButton = document.querySelector(".bar");
 const icon = hamburgButton.querySelector("i");
+const modal = document.querySelector(".modal");
+const modalBtn2 = modal.querySelector("button");
+const body = document.querySelector("body");
 
-const changeIcon = function () {
-  let name = icon.classList;
-  if (name.contains("fa-bars")) {
-    icon.className = `fa-solid fa-x`;
-  } else {
-    icon.className = `fa-solid fa-bars`;
-  }
+const openModal = function () {
+  modal.classList.remove("hidden");
+  body.classList.add("openModal");
 };
 
-hamburgButton.addEventListener("click", changeIcon);
+const closeModal = function () {
+  modal.classList.add("hidden");
+  body.classList.remove("openModal");
+};
+
+hamburgButton.addEventListener("click", openModal);
+modalBtn2.addEventListener("click", closeModal);
