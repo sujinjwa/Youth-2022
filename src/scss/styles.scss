@@ -28,7 +28,6 @@ header {
   display: flex;
   align-items: center;
   background: rgba(0, 0, 0, 0);
-  transition: all 0.1s linear;
   &.change {
     background-color: white;
     height: 70px;
@@ -38,21 +37,16 @@ header {
     }
   }
   nav {
+    position: relative;
     width: 100%;
     margin: 0 80px;
     display: flex;
     justify-content: space-between;
     ul {
-      &:last-child {
-        a {
-          li:hover {
-            font-weight: 600;
-          }
-        }
-      }
       display: flex;
       align-items: center;
       a {
+        transition: color 0.1s linear;
         text-decoration: none;
         font-family: $english;
         color: $light--grey;
@@ -64,56 +58,34 @@ header {
         }
       }
       &.navbar {
-        li {
-          margin: 0px 30px;
-          font-weight: 500;
-          font-size: 18px;
+        a {
+          li {
+            margin: 0px 30px;
+            font-weight: 500;
+            font-size: 18px;
+            &:hover {
+              font-weight: 600;
+            }
+          }
         }
       }
     }
-  }
-  .bar {
-    transition: all 0.1s linear;
-    position: fixed;
-    top: 27px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: none;
-    border: none;
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
-    display: none;
+    .bar {
+      position: absolute;
+      top: -3px;
+      right: 0;
+      background: none;
+      border: none;
+      font-size: 28px;
+      color: white;
+      cursor: pointer;
+      transition: color 0.1s linear;
+      display: none;
+    }
   }
 }
 
 .modal {
-  transition: all 0.2s ease-out;
-  &.hidden {
-    // display: none;
-    opacity: 0;
-    visibility: hidden;
-  }
-  button {
-    position: fixed;
-    top: 27px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: none;
-    border: none;
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
-    z-index: 3;
-  }
   position: fixed;
   top: 0;
   left: 0;
@@ -124,11 +96,30 @@ header {
   align-items: center;
   color: white;
   z-index: 2;
+  transition: all 0.2s ease-out;
+  &.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  button {
+    position: absolute;
+    top: 38px;
+    right: 30px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    z-index: 3;
+    &.moveUp {
+      top: 23px;
+    }
+  }
   .modal__overlay {
+    position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
     height: 100%;
-    position: absolute;
   }
   .modal__navbar {
     position: relative;
@@ -215,21 +206,11 @@ main {
   header {
     nav {
       margin: 0 30px;
-      ul:last-child {
+      .navbar {
         display: none;
       }
-    }
-    .bar {
-      display: block;
-      &.moveUp {
-        top: 11px;
-      }
-    }
-  }
-  .modal {
-    button {
-      &.moveUp {
-        top: 11px;
+      .bar {
+        display: block;
       }
     }
   }
@@ -240,36 +221,28 @@ main {
     height: 50px;
     &.change {
       height: 50px;
-      .bar {
-        margin: 0px 5px;
-      }
     }
     nav {
       margin: 0 15px;
-      ul.logo {
+      .logo {
         a {
           li {
             font-size: 18px;
           }
         }
       }
-    }
-    .bar {
-      top: 0;
-      margin: 10px 5px;
-      width: 25px;
-      height: 25px;
-      font-size: 27px;
+      .bar {
+        top: -7px;
+        font-size: 27px;
+      }
     }
   }
 
   .modal {
-    button {
-      top: 10;
+    button,
+    button.moveUp {
+      top: 12px;
       right: 15px;
-      margin: 10px 5px;
-      width: 25px;
-      height: 25px;
       font-size: 27px;
     }
   }
