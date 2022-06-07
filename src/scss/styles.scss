@@ -71,9 +71,9 @@ header {
       }
     }
     .bar {
-      // position: absolute;
-      // top: -3px;
-      // right: 0;
+      position: absolute;
+      top: -3px;
+      right: 0;
       background: none;
       border: none;
       font-size: 28px;
@@ -242,7 +242,7 @@ main {
     button,
     button.moveUp {
       top: 12px;
-      right: 1rem;
+      right: 15px;
       font-size: 27px;
     }
   }
