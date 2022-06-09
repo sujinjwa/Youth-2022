@@ -3,12 +3,13 @@ const message = document.querySelector(".coreMessage");
 
 const showMessage = () => {
   viewHeight = message.getBoundingClientRect().top;
-  if (viewHeight <= 310) {
+  console.log(viewHeight);
+  if (viewHeight <= 670) {
     message.classList.add("show");
     message.classList.add("slide-top");
   }
 
-  if (viewHeight >= 610) {
+  if (viewHeight >= 800) {
     message.classList.remove("show");
     message.classList.remove("slide-top");
   }
