@@ -28,15 +28,6 @@ header {
   display: flex;
   align-items: center;
   background: rgba(0, 0, 0, 0);
-  &.change {
-    background-color: white;
-    height: 70px;
-    border-bottom: solid 2px $youthLightColor;
-    a,
-    .bar {
-      color: black;
-    }
-  }
   nav {
     position: relative;
     width: 100%;
@@ -72,8 +63,8 @@ header {
       }
     }
     .bar {
-      position: absolute;
-      top: -3px;
+      position: fixed;
+      top: 33px;
       right: 0;
       background: none;
       border: none;
@@ -82,6 +73,18 @@ header {
       cursor: pointer;
       transition: color 0.1s linear;
       display: none;
+    }
+  }
+  &.change {
+    background-color: white;
+    height: 70px;
+    border-bottom: solid 2px $youthLightColor;
+    a,
+    .bar {
+      color: black;
+    }
+    .bar {
+      top: 19px;
     }
   }
 }
@@ -103,9 +106,9 @@ header {
     visibility: hidden;
   }
   button {
-    position: absolute;
-    top: 38px;
-    right: 30px;
+    position: fixed;
+    top: 33px;
+    right: 0;
     background: none;
     border: none;
     font-size: 28px;
@@ -113,7 +116,7 @@ header {
     cursor: pointer;
     z-index: 3;
     &.moveUp {
-      top: 23px;
+      top: 19px;
     }
   }
   .modal__overlay {
@@ -137,7 +140,7 @@ header {
         cursor: pointer;
         transition: all 0.1s linear;
         &:hover {
-          background-color: $youthColor;
+          background-color: $youthDarkColor;
         }
       }
       all: unset;
@@ -324,7 +327,7 @@ main {
       }
       .post__desc {
         width: 80%;
-        margin-bottom: 5em;
+        margin-bottom: 4em;
         font-size: 21px;
         line-height: 1.5;
         letter-spacing: 1.1;
@@ -367,7 +370,7 @@ main {
 footer {
   width: 100%;
   height: 35vh;
-  background-color: #00251a;
+  background-color: $youthDarkColor;
   padding: 50px 150px;
   color: white;
   display: flex;
@@ -444,6 +447,9 @@ footer {
     height: 50px;
     &.change {
       height: 50px;
+      .bar {
+        top: 10px;
+      }
     }
     nav {
       margin: 0 15px;
@@ -455,7 +461,7 @@ footer {
         }
       }
       .bar {
-        top: -7px;
+        top: 10px;
         font-size: 27px;
       }
     }
@@ -465,7 +471,7 @@ footer {
     button,
     button.moveUp {
       top: 10px;
-      right: 15px;
+      // right: 15px;
       font-size: 27px;
     }
   }
