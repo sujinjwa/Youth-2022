@@ -1,0 +1,63 @@
+@media screen and (max-width: $tabletSize) {
+  header {
+    nav {
+      margin: 0 30px;
+      .navbar {
+        display: none;
+      }
+      .bar {
+        display: block;
+      }
+    }
+  }
+  main {
+    .coreMessage {
+      h1 {
+        margin-bottom: 40px;
+      }
+      img {
+        margin-bottom: 40px;
+      }
+      h3 {
+        width: 650px;
+        font-size: 22px;
+      }
+    }
+    &#contents {
+      .contents__hero {
+        margin-top: 50px;
+        // height: 20vh;
+        .hero__photo {
+          .hero__text {
+            // margin: 0;
+            h3 {
+              font-size: 27px;
+            }
+          }
+        }
+      }
+      // ul.contents__menu {
+      //   height: 70px;
+      //   a {
+      //     // width: 30%;
+      //     li {
+      //       font-size: 20px;
+      //     }
+      //   }
+      // }
+    }
+  }
+
+  .blog {
+    .blog__post {
+      width: 100%;
+      .post__content {
+        padding: 30px;
+      }
+    }
+  }
+
+  footer {
+    padding: 50px;
+  }
+}

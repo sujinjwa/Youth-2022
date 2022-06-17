@@ -1,0 +1,33 @@
+footer {
+  width: 100%;
+  height: 35vh;
+  background-color: $youthDarkColor;
+  padding: 50px 150px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  .footer__row1,
+  .footer__row2 {
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  .footer__row1 {
+    font-family: $english;
+    font-size: 23px;
+    .footer__logo {
+      li {
+        margin-bottom: 30px;
+        font-weight: 600;
+      }
+    }
+    a:last-child {
+      font-size: 20px;
+    }
+  }
+  .footer__row2 {
+    font-size: 35px;
+  }
+}
