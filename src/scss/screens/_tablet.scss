@@ -36,28 +36,31 @@
           }
         }
       }
-      // ul.contents__menu {
-      //   height: 70px;
-      //   a {
-      //     // width: 30%;
-      //     li {
-      //       font-size: 20px;
-      //     }
-      //   }
-      // }
-    }
-  }
+      .group_program {
+        .inner_program {
+          section.box_program {
+            margin-bottom: 60px;
+            display: flex;
+            flex-direction: column;
+            div.title {
+              margin-bottom: 50px;
+            }
+          }
+        }
+      }
 
-  .blog {
-    .blog__post {
-      width: 100%;
-      .post__content {
-        padding: 30px;
+      .blog {
+        .blog__post {
+          width: 100%;
+          .post__content {
+            padding: 30px;
+          }
+        }
+      }
+
+      footer {
+        padding: 50px;
       }
     }
-  }
-
-  footer {
-    padding: 50px;
   }
 }

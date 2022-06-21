@@ -1,0 +1,33 @@
+.contents__qna {
+  width: 100%;
+  margin-bottom: 70px;
+  .qna__menu {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      text-align: center;
+      color: $youthLightColor;
+      &.active {
+        color: $youthColor;
+      }
+      i {
+        font-size: 35px;
+        padding: 10px;
+      }
+      li {
+        padding: 10px;
+        font-size: 18px;
+        font-family: $kakao;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+// 여기부터 다시 해야 함
+.contents__qna__box {
+  width: 100%;
+}

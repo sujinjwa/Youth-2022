@@ -89,6 +89,44 @@
           }
         }
       }
+
+      .group_program {
+        padding: 50px 0px;
+        .inner_program {
+          section.box_program {
+            margin-bottom: 0px;
+            div.title {
+              font-size: 20px;
+              margin-bottom: 15px;
+            }
+            div.contents {
+              h1 {
+                font-size: 18px;
+              }
+              h3 {
+                font-size: 15px;
+                margin-bottom: 50px;
+              }
+            }
+          }
+          .contents__qna {
+            margin-bottom: 40px;
+            ul.qna__menu {
+              width: 80%;
+              a {
+                i {
+                  font-size: 20px;
+                  padding: 5px;
+                }
+                li {
+                  font-size: 15px;
+                  padding: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 
