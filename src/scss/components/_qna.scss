@@ -30,4 +30,70 @@
 // 여기부터 다시 해야 함
 .contents__qna__box {
   width: 100%;
+  margin-bottom: 100px;
+  .changeBtn {
+    margin-bottom: 20px;
+  }
+  .container {
+    width: 95%;
+    margin: 0 auto;
+    #fag {
+      .panel-question {
+        font-size: 20px;
+        line-height: 1.5;
+        &.clicked {
+          .panel-heading {
+            border-bottom: 1px solid;
+          }
+          .panel-body {
+            display: block;
+            display: flex;
+            justify-content: flex-start;
+          }
+        }
+        &:last-child {
+          .panel-heading {
+            border-bottom: 1px solid;
+          }
+          .panel-body {
+            border-bottom: 1px solid;
+          }
+        }
+        .panel-heading {
+          padding: 25px;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          border-top: 1px solid;
+          & > i {
+            margin-right: 30px;
+          }
+          h3 {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            i {
+              margin: 0 30px;
+              padding-top: 5px;
+            }
+          }
+        }
+        .panel-body {
+          padding: 25px;
+          padding-left: 0;
+          background-color: $light--grey;
+          display: none;
+          & > i {
+            margin-left: 25px;
+            margin-right: 30px;
+            margin-top: 5px;
+          }
+          p {
+            font-size: 17px;
+            // line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
 }
