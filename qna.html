@@ -16,9 +16,9 @@
         <ul class="navbar">
           <a href="#"><li>ABOUT</li></a>
           <a href="#"><li>YOUTH KIT</li></a>
-          <a class="bold" href="contents.html"><li>콘텐츠</li></a>
-          <a href="#"><li>커뮤니티</li></a>
-          <a href="#"><li>로그인</li></a>
+          <a class="bold" href="contents.html"><li><b>CONTENTS</b></li></a>
+          <a href="#"><li>COMUNITY</li></a>
+          <a href="#"><li>LOG IN</li></a>
         </ul>
         <button class="bar">
           <i class="fa-solid fa-bars"></i>
@@ -34,10 +34,10 @@
           <a href="#"><li>ABOUT</li></a>
           <a href="#"><li>YOUTH KIT</li></a>
           <a href="contents.html"
-            ><li><b>유언 관련 콘텐츠</b></li></a
+            ><li><b>CONTENTS</b></li></a
           >
-          <a href="#"><li>커뮤니티</li></a>
-          <a href="#"><li>로그인</li></a>
+          <a href="#"><li>COMUNITY</li></a>
+          <a href="#"><li>LOG IN</li></a>
         </ul>
       </div>
     </header>
@@ -81,8 +81,11 @@
 
           <!-- 여기부터 다시 해야 함 -->
           <div class="contents__qna__box">
-            <div class="changeBtn">
-              <h3>일상 용어로 확인하기</h3>
+            <div class="container__toggle">
+              <div class="toggle">
+                <i class="indicator"></i>
+              </div>
+              <h3>법률 용어 모드</h3>
             </div>
             <div class="container">
               <section id="fag">
@@ -103,7 +106,7 @@
                       항목별로 나누어 올리시는 것을 권장해드립니다. 
                       임대수익보장에 따른 보증금 및 월임대료 보전 금액은 임대수익보장 
                       합의서에 표기 되어있습니다. 이때, 임대수익보장제 합의서상 
-                      보증금액이 상이하거나 전세형일 경우 환산보증금 산정식
+                      보증금액이 상이하거나 전세형일 경우 <span class="original">환산보증금</span> <span class="changed">메롱</span> 산정식
                       [환산보증금=보증금+(월세*100)]에 따릅니다.
                       현장별, 계약자별 상이할 수 있으니 필히 임대수익보장 합의서를 
                       참고 바랍니다. 
@@ -211,5 +214,6 @@
     <script src="src/js/changeHeader.js"></script>
     <script src="src/js/clickBar.js"></script>
     <script src="src/js/openAnswer.js"></script>
+    <script src="src/js/toggleBtn.js"></script>
   </body>
 </html>
