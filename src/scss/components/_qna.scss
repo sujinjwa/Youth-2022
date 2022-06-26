@@ -1,25 +1,34 @@
 .contents__qna {
   width: 100%;
-  margin-bottom: 70px;
+  margin-bottom: 120px;
   .qna__menu {
-    width: 50%;
+    width: 95%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     a {
+      width: 100%;
+      padding: 5px;
       text-align: center;
-      color: $youthLightColor;
+      color: rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-left: none;
+      &:first-child {
+        border-left: 1px solid rgba(0, 0, 0, 0.2);
+      }
       &.active {
         color: $youthColor;
+        border-bottom: none;
+        border-top: 3px solid;
       }
       i {
-        font-size: 35px;
+        font-size: 15px;
         padding: 10px;
       }
       li {
-        padding: 10px;
-        font-size: 18px;
+        padding-bottom: 10px;
+        font-size: 17px;
         font-family: $kakao;
         font-weight: 600;
       }
@@ -41,11 +50,11 @@
       width: 40px;
       height: 20px;
       border-radius: 20px;
-      background-color: $youthLightColor;
+      background-color: $green;
       cursor: pointer;
       transition: 0.2s;
       &.active {
-        background-color: $youthDarkColor;
+        background-color: $dark---green;
         .indicator {
           left: 20px;
         }
