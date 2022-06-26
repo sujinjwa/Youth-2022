@@ -125,6 +125,29 @@
               }
             }
           }
+          .contents__qna__box {
+            .container__toggle {
+              margin: 10px;
+              .toggle {
+                width: 30px;
+                height: 15px;
+                border-radius: 15px;
+                &.active {
+                  .indicator {
+                    left: 15px;
+                  }
+                }
+                .indicator {
+                  width: 15px;
+                  height: 14px;
+                }
+              }
+              h3 {
+                font-size: 12px;
+                margin-right: 5px;
+              }
+            }
+          }
           .panel-question {
             font-size: 15px;
             .panel-heading {
