@@ -14,6 +14,7 @@
 // screens
 @import "screens/main";
 @import "screens/contents";
+@import "screens/about";
 @import "screens/tablet";
 @import "screens/mobile";
 
@@ -22,8 +23,11 @@
 }
 
 body {
-  font-family: "Hahmlet", serif;
+  // font-family: "Hahmlet", serif;
   // font-family: $kakao;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   transition: all 0.2s linear;
   &.openModal {
     overflow: hidden;
