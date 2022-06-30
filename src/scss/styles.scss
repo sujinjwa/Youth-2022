@@ -24,11 +24,8 @@
 
 body {
   // font-family: "Hahmlet", serif;
-  // font-family: $kakao;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  transition: all 0.2s linear;
+  font-family: $kakao-regular;
+
   &.openModal {
     overflow: hidden;
     // filter: blur(5px);

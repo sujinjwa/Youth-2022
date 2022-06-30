@@ -58,6 +58,21 @@
         }
       }
 
+      .wrapper {
+        .about__people {
+          .people__members {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            .member {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+      }
+
       footer {
         padding: 50px;
       }

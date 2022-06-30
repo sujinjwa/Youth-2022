@@ -84,7 +84,8 @@ main#contents {
         display: grid;
         grid-template-columns: 1fr 2.5fr;
         grid-template-rows: 100%;
-        font-family: $kakao;
+        word-break: keep-all;
+        line-height: 1.5;
         div.title {
           font-size: 30px;
           font-weight: 600;

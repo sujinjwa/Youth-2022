@@ -96,15 +96,16 @@
           section.box_program {
             margin-bottom: 0px;
             div.title {
-              font-size: 20px;
+              font-size: 22px;
               margin-bottom: 15px;
             }
             div.contents {
               h1 {
-                font-size: 18px;
+                font-size: 17px;
               }
               h3 {
-                font-size: 15px;
+                font-size: 14px;
+                font-family: $kakao-regular;
                 margin-bottom: 50px;
               }
             }
@@ -166,6 +167,41 @@
               }
               p {
                 font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+      .wrapper {
+        padding: 60px 0;
+        .about__people {
+          .people__title {
+            margin-bottom: 20px;
+          }
+          .people__members {
+            .member {
+              padding: 10px;
+              img {
+                width: 100%;
+              }
+              .introduce {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                .name {
+                  font-size: 15px;
+                }
+                p {
+                  margin: 10px 0;
+                  &.txt_position {
+                    font-size: 13px;
+                    font-weight: 400;
+                  }
+                  &.txt_desc {
+                    display: none;
+                  }
+                }
               }
             }
           }
