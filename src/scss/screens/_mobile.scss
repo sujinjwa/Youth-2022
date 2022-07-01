@@ -176,6 +176,7 @@
         padding: 60px 0;
         .about__people {
           .people__title {
+            font-size: 22px;
             margin-bottom: 20px;
           }
           .people__members {
@@ -258,18 +259,33 @@
   }
 
   footer {
-    height: 30vh;
-    padding: 35px;
-    .footer__row1 {
-      .footer__logo {
-        font-size: 19px;
+    padding: 40px 20px;
+    .footer__col1 {
+      font-size: 15px;
+      .col__row1 {
+        .footer__logo {
+          li {
+            margin-bottom: 5px;
+          }
+        }
       }
-      a:last-child {
-        font-size: 15px;
+      .col__row2 {
+        p {
+          padding: 2px 0;
+        }
       }
     }
-    .footer__row2 {
-      font-size: 22px;
+    .footer__col2 {
+      font-size: 12px;
+      .col2__row1 {
+        flex-direction: column;
+        align-items: flex-end;
+      }
+      .col2__row2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
     }
   }
 }
