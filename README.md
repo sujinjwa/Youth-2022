@@ -1,2 +1,2 @@
 # Youth-2022
-Youth page built using vanilla JS, SCSS, NodeJS, Express, Mongo and ES6
+2022년 6월동안 서버 없이 만든 UI
